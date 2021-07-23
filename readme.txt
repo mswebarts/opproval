@@ -2,7 +2,7 @@
 Contributors: mswebarts
 Tags: woocommerce, order, approval, mark order
 Requires at least: 4.6
-Tested up to: 5.7.1
+Tested up to: 5.8
 Requires PHP: 5.6
 Stable tag: 1.2.1
 License: GPLv2 or later
@@ -23,7 +23,7 @@ on the My Accounts -> Orders page. Once the customer has received the product, h
 [youtube https://youtu.be/Q3qcKCD94e0]
 
 == Update ==
-* Added compatibility for WordPress 5.7.1
+* Added compatibility for WordPress 5.8
 * Hidden Mark As Received button after form submit
 * Fixed order status text update without manually refreshing
 
@@ -75,6 +75,10 @@ we don't want them to be able to mark the order as Completed when the order is i
 At this initial release, we have avoided extra customizations. We have some ideas to make this a great plugin for you but first,
 we need to see if this plugin will be useful to users.
 
+= How can I contribute to the plugin? =
+
+It's an open source plugin and you can contribute on Github at this [Repository](https://github.com/mswebarts/order-approval-by-customer-for-woocommerce)
+
 == Screenshots ==
 
 1. /assets/screenshots/screenshot-1.png
@@ -89,3 +93,6 @@ we need to see if this plugin will be useful to users.
 * Added compatibility for WordPress 5.6.2
 * Hidden Mark As Received button after form submit
 * Fixed order status text update without manually refreshing
+
+= 1.2.1 =
+* Added compatibility for WordPress 5.8
