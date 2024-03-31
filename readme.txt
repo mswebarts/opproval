@@ -1,8 +1,8 @@
 === Opproval - Order Approval by Customer for WooCommerce ===
 Contributors: mswebarts
 Tags: woocommerce, order, approval, mark order
-Requires at least: 4.6
-Tested up to: 5.8
+Requires at least: 5.5
+Tested up to: 6.5
 Requires PHP: 5.6
 Stable tag: 1.2.2
 License: GPLv2 or later
