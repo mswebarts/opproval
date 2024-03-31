@@ -28,6 +28,12 @@ function msoa_woocommerce_dependency_error() {
     printf( '<div class="%1$s"><p>%2$s</p></div>', esc_attr( $class ), esc_html( $message ) ); 
 }
 
+// Load plugin textdomain
+add_action( 'init', 'msoa_load_textdomain' );
+function msoa_load_textdomain() {
+    load_plugin_textdomain( 'opproval', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+}
+
 add_action( "wp_enqueue_scripts", "msoa_register_styles" );
 function msoa_register_styles() {
     wp_enqueue_style( "msoa_style", plugins_url( 'style.css', __FILE__ ) );

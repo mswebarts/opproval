@@ -1,0 +1,52 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Opproval - Order Approval by Customer\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-31 11:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.7; wp-6.4.3\n"
+"X-Domain: opproval"
+
+#: order-approval.php:94
+msgid "Click to mark the order as complete if you have received the product"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Deliver the order and let your customers mark the delivery as completed "
+"after receiving the product."
+msgstr ""
+
+#: order-approval.php:68
+msgid "Delivered"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://www.mswebarts.com/"
+msgstr ""
+
+#: order-approval.php:94
+msgid "Mark as Received"
+msgstr ""
+
+#. Author of the plugin
+msgid "MS Web Arts"
+msgstr ""
+
+#. Name of the plugin
+msgid "Opproval - Order Approval by Customer"
+msgstr ""
+
+#: order-approval.php:26
+msgid ""
+"You must need to install and activate woocommerce for Order Approval to work"
+msgstr ""
