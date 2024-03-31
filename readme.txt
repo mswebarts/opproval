@@ -1,14 +1,14 @@
-=== Order Approval by Customer for WooCommerce ===
+=== Opproval - Order Approval by Customer for WooCommerce ===
 Contributors: mswebarts
 Tags: woocommerce, order, approval, mark order
 Requires at least: 4.6
 Tested up to: 5.8
 Requires PHP: 5.6
-Stable tag: 1.2.1
+Stable tag: 1.2.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-This plugin will help you improve the WooCommerce workflow and gain customer trust by completing the order only when they have received the products. 
+Deliver the order and let your customers mark the delivery as completed after receiving the product.
 
 == Description ==
 
@@ -86,13 +86,16 @@ It's an open source plugin and you can contribute on Github at this [Repository]
 
 == Changelog ==
 
-= 1.0.1 =
-* Initial release
+= 1.2.1 =
+* Compatibility with WordPress 6.5 and WC 8.7
 
-= 1.2 =
+= 1.2.1 =
+* Added compatibility for WordPress 5.8
+
+= 1.2.0 =
 * Added compatibility for WordPress 5.6.2
 * Hidden Mark As Received button after form submit
 * Fixed order status text update without manually refreshing
 
-= 1.2.1 =
-* Added compatibility for WordPress 5.8
+= 1.0.1 =
+* Initial release

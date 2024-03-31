@@ -1,26 +1,14 @@
 <?php
 /**
- * Plugin Name: Order Approval by Customer for WooCommerce
- * Description: This plugin enables the order approval by Customers for woocommerce. The customers can change the order status/approve the order when it has order status set as Delivered.
- * Version:     1.2.1
+ * Plugin Name: Opproval - Order Approval by Customer
+ * Description: Deliver the order and let your customers mark the delivery as completed after receiving the product.
+ * Version:     1.2.2
  * Author:      MS Web Arts
  * Author URI:  https://www.mswebarts.com/
  * License:     GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain: order-approval
+ * Text Domain: opproval
 
- {Plugin Name} is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or
-any later version.
- 
-{Plugin Name} is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for more details.
- 
-You should have received a copy of the GNU General Public License
-along with {Plugin Name}. If not, see {License URI}.
  */
 
 // Check if woocommerce is installed
@@ -35,7 +23,7 @@ function msoa_check_for_woocommerce() {
 
 function msoa_woocommerce_dependency_error() {
     $class = 'notice notice-error';
-    $message = __( 'You must need to install and activate woocommerce for Order Approval to work', 'order-approval' );
+    $message = __( 'You must need to install and activate woocommerce for Order Approval to work', 'opproval' );
 
     printf( '<div class="%1$s"><p>%2$s</p></div>', esc_attr( $class ), esc_html( $message ) ); 
 }
@@ -71,7 +59,7 @@ function msoa_add_delivered_status_to_order_statuses( $order_statuses ) {
         $new_order_statuses[ $key ] = $status;
 
         if ( 'wc-processing' === $key ) {
-            $new_order_statuses['wc-delivered'] = __( 'Delivered', 'order-approval' );
+            $new_order_statuses['wc-delivered'] = __( 'Delivered', 'opproval' );
         }
     }
 
@@ -97,7 +85,7 @@ function msoa_mark_as_received( $actions, $order ) {
 				<input type="hidden" name="mark_as_received" value="<?php echo esc_attr( $check_received ); ?>">
 				<input type="hidden" name="order_id" value="<?php echo esc_attr($order_id);?>">
 				<?php wp_nonce_field( 'so_38792085_nonce_action', '_so_38792085_nonce_field' ); ?> 
-				<input class="int-button-small" type="submit" value="<?php echo esc_attr_e( 'Mark as Received', 'order-approval' ); ?>" data-toggle="tooltip" title="<?php echo esc_attr_e( 'Click to mark the order as complete if you have received the product', 'order-approval' ); ?>">
+				<input class="int-button-small" type="submit" value="<?php echo esc_attr_e( 'Mark as Received', 'opproval' ); ?>" data-toggle="tooltip" title="<?php echo esc_attr_e( 'Click to mark the order as complete if you have received the product', 'opproval' ); ?>">
 			</form>
 	    </div>
 	    <?php
