@@ -4,7 +4,7 @@ Tags: woocommerce, order, approval, mark order
 Requires at least: 5.5
 Tested up to: 6.5
 Requires PHP: 5.6
-Stable tag: 1.2.2
+Stable tag: 1.2.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -86,7 +86,11 @@ It's an open source plugin and you can contribute on Github at this [Repository]
 
 == Changelog ==
 
-= 1.2.1 =
+= 1.2.3 =
+* Analytics integration
+* Fixed compatibility issues
+
+= 1.2.2 =
 * Compatibility with WordPress 6.5 and WC 8.7
 
 = 1.2.1 =

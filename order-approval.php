@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Opproval - Order Approval by Customer
  * Description: Deliver the order and let your customers mark the delivery as completed after receiving the product.
- * Version:     1.2.2
+ * Version:     1.2.3
  * Author:      MS Web Arts
  * Author URI:  https://www.mswebarts.com/
  * License:     GPL v2 or later
