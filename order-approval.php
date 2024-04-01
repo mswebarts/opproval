@@ -13,6 +13,27 @@
  * @package Opproval
  */
 
+// integrate Appsero
+require __DIR__ . '/vendor/autoload.php';
+/**
+ * Initialize the plugin tracker
+ *
+ * @return void
+ */
+function appsero_init_tracker_order_approval_by_customer_for_woocommerce() {
+
+    if ( ! class_exists( 'Appsero\Client' ) ) {
+      require_once __DIR__ . '/appsero/src/Client.php';
+    }
+
+    $client = new Appsero\Client( '0d9a463a-7106-45e6-a63f-21c831f4e1b2', 'Opproval &#8211; Order Approval by Customer for WooCommerce', __FILE__ );
+
+    // Active insights
+    $client->insights()->init();
+
+}
+appsero_init_tracker_order_approval_by_customer_for_woocommerce();
+
 // Check if woocommerce is installed.
 add_action( 'plugins_loaded', 'msoa_check_for_woocommerce' );
 function msoa_check_for_woocommerce() {
